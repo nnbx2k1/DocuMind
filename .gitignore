@@ -1,0 +1,48 @@
+# --- System / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.swp
+
+# --- Frontend (React + TS) ---
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+Frontend/.env
+Frontend/.env.local
+Frontend/npm-debug.log*
+Frontend/yarn-error.log*
+Frontend/.eslintcache
+
+# --- Backend (FastAPI + LangChain) ---
+# Python bytecode
+Backend/app/**/__pycache__/
+Backend/**/*.py[cod]
+Backend/*$py.class
+
+# Environments
+Backend/.venv/
+Backend/venv/
+Backend/env/
+Backend/bin/
+Backend/lib/
+
+# Local Keys and Config
+Backend/.env
+Backend/app/config/.env
+
+# LangChain / AI Specifics
+# Ignore local vector databases and storage
+Backend/app/storage/*
+!Backend/app/storage/.gitkeep
+Backend/chroma/
+Backend/faiss_index/
+
+# Notebooks
+Backend/notebooks/.ipynb_checkpoints/
+
+# --- Miscellaneous ---
+.python-version
+__pycache__/
